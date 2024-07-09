@@ -37,12 +37,15 @@ class SearxngSearchProvider(SearchProvider):
             for result in results["results"][:num_results]
         ]
 
+ #HACK
     async def get_image_results(
         self, client: httpx.AsyncClient, query: str, num_results: int = 4
     ) -> list[str]:
         response = await client.get(
             f"{self.host}/search",
-            params={"q": query, "format": "json", "categories": "images"},
+            params={"q": query, "format": "json", "categories": "videos"}, #HACK
         )
         results = response.json()
-        return [result["img_src"] for result in results["results"][:num_results]]
+        
+        return [result["url"] for result in results["results"][:num_results]] #HACK
+        
