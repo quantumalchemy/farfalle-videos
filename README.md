@@ -1,4 +1,5 @@
-# Farfalle
+# Farfalle : Videos Ver.
+This fork swaps out Images Section for Videos!
 
 Open-source AI-powered search engine. (Perplexity Clone)
 
