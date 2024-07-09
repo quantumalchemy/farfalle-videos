@@ -73,7 +73,7 @@ export const AssistantMessageContent = ({
           </>
         )}
       </Section>
-      <Section title="Images" animate={isStreaming}>
+      <Section title="Videos" animate={isStreaming}>
         {images && images.length > 0 ? (
           <ImageSection images={images} />
         ) : (
