@@ -1,4 +1,6 @@
-# Farfalle
+# Farfalle - Videos 
+# This fork swaps out Images sec. for Videos
+# Added Dockerfile build for using your own Searxng conatiner 
 
 Open-source AI-powered search engine. (Perplexity Clone)
 
